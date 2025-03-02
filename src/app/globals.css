@@ -17,8 +17,18 @@
   }
 }
 
+
 body {
   color: var(--foreground);
   background: var(--background);
+  margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.outfit-regular {
+  font-family: "Outfit", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
