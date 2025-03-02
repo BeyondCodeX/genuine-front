@@ -8,6 +8,7 @@ import lc1 from "@/images/Frame171.svg";
 import lc2 from "@/images/Frame172.svg";
 import fs2 from "@/images/Jet-pack 1.png";
 import fs3 from "@/images/Fotoparabilinguismo1.png";
+import bgsf from "@/images/IMG_68741.png";
 //logos rrss
 import fb from "@/images/FB.svg";
 import ig from "@/images/IG.svg";
@@ -20,6 +21,7 @@ import Card2 from "@/components/card/Card2";
 import TextBox from "@/components/textBox/TextBox";
 import DataBox from "@/components/dataBox/DataBox";
 import BurgerMenu from "@/components/burgerMenu/BurgerMenu";
+import { cardTexts } from "@/utils/cardText";
 
 const page = () => {
   return (
@@ -40,8 +42,8 @@ const page = () => {
         </Card>
       </Section>
       // This is the new section (1 title +2 cards2)
-      <Section className="flex-col justify-start items-center  bg-gradient-to-b from-sky-200 to-slate-50">
-        <img src={fs2.src} alt="jetpack" className="h-2/5 self-center" />
+      <Section className="flex flex-col  items-center  bg-gradient-to-b from-sky-200 to-slate-50">
+        <img src={fs2.src} alt="jetpack" className="w-[calc(550px)] min-w-[calc(300px)] max-w-[calc(600px)] self-center" />
         <TitleCard
           text="Nuestra misión en el mundo y lo que soñamos para tus hijos"
           className="font-bold"
@@ -49,23 +51,19 @@ const page = () => {
         <div className="flex justify-center items-center">
           <Card2
             className="top-2/4 left-2/4 w-3/4 m-0 ml-4 md:w-1/3"
-            titlecard="Nuestra misión "
+            titlecard={cardTexts.card1.title}
             classNameChildrens="flex justify-center items-center text-xs"
             image={lc1}
           >
-            Educar, empoderar y conectar a nuestros estudiantes mediante
-            experiencias de aprendizaje remoto que trasciendan las fronteras
-            geográficas e idiomáticas.
+            {cardTexts.card1.text}
           </Card2>
           <Card2
             className="top-2/4 left-2/4 w-3/4 m-0 ml-4 md:w-1/3"
-            titlecard="Nuestra visión "
+            titlecard={cardTexts.card2.title}
             classNameChildrens="flex justify-center items-center text-xs"
             image={lc2}
           >
-            Visualizamos un mundo donde miles de jóvenes y niños usen sus
-            habilidades para transformar sus comunidades y regiones por medio
-            del emprendimiento, la tecnología y la innovación.
+            {cardTexts.card2.text}
           </Card2>
         </div>
       </Section>
@@ -98,38 +96,46 @@ const page = () => {
         className="flex-row justify-start  items-center h-1/2 bg-white"
         height="fit"
       >
-        <div>
-          <TitleCard text="Somos del mundo" className="font-bold"></TitleCard>
-          <TextBox
-            className="bg-amber-600 text-white"
-            texto="Colombia, Ecuador, Perú, México, Panamá, Costa Rica, Chile, Argentina, Estados Unidos, Emiratos Árabes, Brasil, República Dominicana, Irlanda, Canadá, España, Portugal, China, Italia."
-          ></TextBox>
-          <TextBox
-            className="bg-fuchsia-400 text-blue-950"
-            texto="Estados Unidos, Colombia, Perú, Brasil, Chile, México, Venezuela.s"
-          ></TextBox>
-          <TextBox
-            className="bg-fuchsia-950 text-white"
-            texto="Colombia, Sudáfrica, Filipinas, Chile, México, Singapur."
-          ></TextBox>
-        </div>
-        <div>
-          <div className="flex-col justify-center items-center">
-            <DataBox
-              className="text-amber-600 "
-              texto="+ 400 Estudiantes"
-            ></DataBox>
-            <DataBox className="text-fuchsia-300" texto="28 Staff"></DataBox>
-            <DataBox
-              className="text-fuchsia-950"
-              texto="44 Profesores"
-            ></DataBox>
+        <div className="flex flex-row w-full">
+          <div className="flex flex-col justify-center items-center flex-1">
+            <TitleCard text="Somos del mundo" className="font-bold"></TitleCard>
+            <TextBox
+              className="bg-amber-600 text-white"
+              texto="Colombia, Ecuador, Perú, México, Panamá, Costa Rica, Chile, Argentina, Estados Unidos, Emiratos Árabes, Brasil, República Dominicana, Irlanda, Canadá, España, Portugal, China, Italia."
+            ></TextBox>
+            <TextBox
+              className="bg-fuchsia-400 text-blue-950"
+              texto="Estados Unidos, Colombia, Perú, Brasil, Chile, México, Venezuela.s"
+            ></TextBox>
+            <TextBox
+              className="bg-fuchsia-950 text-white"
+              texto="Colombia, Sudáfrica, Filipinas, Chile, México, Singapur."
+            ></TextBox>
+          </div>
+          <div className="flex flex-col justify-center items-center flex-3">
+            <div className="flex flex-row justify-around w-full">
+              <DataBox
+                className="text-amber-600 "
+                number={"500"}
+                text="Estudiantes"
+              ></DataBox>
+              <DataBox
+                className="text-fuchsia-300"
+                number={"500"}
+                text="Staff"
+              ></DataBox>
+              <DataBox
+                className="text-fuchsia-950"
+                number={"500"}
+                text="Profesores"
+              ></DataBox>
+            </div>
           </div>
         </div>
       </Section>
       // "footer"
       <Section
-        bgImage={bgs1}
+        bgImage={bgsf}
         className="flex justify-start items-center "
         textFooter="studyatgenuine.com"
       >
@@ -151,7 +157,7 @@ const page = () => {
             className="text-xs"
             text="Síguenos en Redes Sociales y conoce nuestra gran comunidad digital"
           ></TitleCard>
-          <div className="flex-col justify-center items-center justify-self-center">
+          <div className="flex flex-row justify-center items-center justify-self-center">
             <img src={fb.src} alt="logo" className="h-7" />
             <img src={ig.src} alt="logo" className="h-7" />
             <img src={tkt.src} alt="logo" className="h-7" />

@@ -23,6 +23,7 @@ body {
   background: var(--background);
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  background: #efefef;
 }
 
 .outfit-regular {
