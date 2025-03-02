@@ -25,7 +25,7 @@ const Section = ({
     >
       <div
         className={`bg-no-repeat object-contain bg-center bg-cover w-full rounded-4xl ${className}`}
-        style={{ backgroundImage: `url(${bgImageUrl})` }}
+        style={bgImageUrl ? { backgroundImage: `url(${bgImageUrl})` } : {}}
       >
         {children}
       </div>
