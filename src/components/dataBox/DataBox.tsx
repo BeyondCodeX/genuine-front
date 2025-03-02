@@ -1,8 +1,15 @@
 import React from 'react'
-
-const DataBox = () => {
+interface DataBoxProps {
+    className?: string;
+    texto: string;
+  }
+const DataBox  =({ className, texto }: DataBoxProps) => {
   return (
-    <div>DataBox</div>
+    <div
+      className={`bg-transparent rounded-2xl border-4 " ${className}`}
+    >
+      {texto}
+    </div>
   )
 }
 
