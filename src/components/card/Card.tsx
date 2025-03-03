@@ -1,5 +1,4 @@
-import React, { Children } from "react";
-import { Outfit } from "next/font/google";
+import React from "react";
 import TitleCard from "./TitleCard";
 interface CardProps {
   className?: string;

@@ -44,7 +44,6 @@ const page = () => {
           <img src={logo.src} alt="Logo" className="w-7/12" />
         </Card>
       </Section>
-      // This is the new section (1 title +2 cards2)
       <Section
         id="sec2"
         height="auto"
@@ -78,7 +77,6 @@ const page = () => {
           </Card2>
         </div>
       </Section>
-      // This is the new section (2 subsections)
       <Section
         id="sec3"
         className="flex flex-row flex-wrap md:flex-nowrap justify-start  items-center h-1/2 bg-white"
@@ -108,7 +106,6 @@ const page = () => {
           <img src={fs3.src} alt="imggrupal" className="h-full" />
         </div>
       </Section>
-      // This is the new section 2 subsection
       <Section
       id="secmap"
         className="flex-row justify-start  items-center h-1/2 bg-white md:flex-wrap"
@@ -152,7 +149,6 @@ const page = () => {
           </div>
         </div>
       </Section>
-      // "footer"
       <Section
         id="sec4"
         bgImage={bgsf}
