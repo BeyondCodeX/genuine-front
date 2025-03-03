@@ -7,7 +7,7 @@ interface DataBoxProps {
 const DataBox = ({ className, number, text }: DataBoxProps) => {
   return (
     <div
-      className={`bg-transparent rounded-lg border-2 w-[calc(250px)] flex flex-row gap-3 justify-center " ${className}`}
+      className={`bg-transparent rounded-lg border-2 w-[calc(250px)] flex flex-row gap-3 justify-center pl-3 pr-3 " ${className}`}
     >
       <div className="flex flex-row w-full justify-center items-center gap-3 h-2px ">
         <div className="text-3xl font-bold p-2 text-nowrap">{number}</div>

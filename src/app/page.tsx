@@ -38,7 +38,7 @@ const page = () => {
           className="top-2/4 left-2/4  m-0  mb-45 ml-4 md:w-1/3 md:mt-65  "
           titlecard="Estás a punto de iniciar un viaje hacia el universo de la "
           titlecard2="educación digital"
-          classNameChildrens="justify-center items-center p-10 "
+          classNameChildrens="justify-center items-center p-10   "
         >
           <img src={logo.src} alt="Logo" className="w-7/12" />
         </Card>
@@ -59,17 +59,17 @@ const page = () => {
         ></TitleCard>
         <div className="flex justify-center items-start flex-6 flex-wrap mt-5">
           <Card2
-            className="top-2/4 left-2/4 w-4/5  m-0 ml-4 md:w-2/5"
+            className="top-2/4 left-2/4 w-4/5  m-0 ml-4 md:w-2/5 text-3xl"
             titlecard={cardTexts.card11.title}
-            classNameChildrens="flex justify-center items-center text-xl pb-10"
+            classNameChildrens="flex justify-center items-center text-xl pb-10 leading-none"
             image={lc1}
           >
             {cardTexts.card11.text}
           </Card2>
           <Card2
-            className="top-2/4 left-2/4 w-4/5 m-0  mb-2 ml-4 md:w-2/5"
+            className="top-2/4 left-2/4 w-4/5 m-0  mb-2 ml-4 md:w-2/5 text-3xl"
             titlecard={cardTexts.card22.title}
-            classNameChildrens="flex justify-center items-center text-xl "
+            classNameChildrens="flex justify-center items-center text-xl  leading-none"
             image={lc2}
           >
             {cardTexts.card22.text}
@@ -81,10 +81,10 @@ const page = () => {
         className="flex flex-row flex-wrap md:flex-nowrap justify-start  items-center h-1/2 bg-white"
         height="fit"
       >
-        <div className="flex flex-col justify-center items-start flex:1  ">
+        <div className="flex flex-col justify-center items-start flex:1   ">
           <TitleCard
             text="De Estados Unidos para el mundo"
-            className="font-bold flex-2 p-20 pb-10 text-3xl"
+            className="font-bold flex-2 p-20 pb-10 text-5xl"
           ></TitleCard>
           <TitleCard
             text={cardTexts.sec3.text}
@@ -95,7 +95,7 @@ const page = () => {
               text="Conoce el nuestro aquí"
               className="text-2xl text-center md:text-nowrap"
             ></TitleCard>
-            <button className="bg-blue-950 text-white  rounded-lg text-2xl p-5">
+            <button className="bg-blue-950 text-white  rounded-lg text-2xl p-5 pt-3 pb-3">
               <a href="https://studyatgenuine.com/registro-legal/" target="_blank">
                 Registro legal
               </a>
@@ -114,7 +114,7 @@ const page = () => {
           <div className="flex flex-col justify-start items-center flex-1">
             <TitleCard
               text="Somos del mundo"
-              className="font-bold text-6xl m-15 mb-10"
+              className="font-bold text-6xl m-10 mb-20 mt-10"
             ></TitleCard>
             <TextBox
               className="bg-amber-600 text-white"
@@ -130,11 +130,11 @@ const page = () => {
             ></TextBox>
           </div>
           <div className="flex flex-col justify-center items-center flex-3 mt-15 ">
-            <div className="flex flex-row justify-around w-full flex-wrap md:flex-nowrap gap-10 md:gap-0">
+            <div className="flex flex-row justify-center w-full flex-wrap md:flex-nowrap gap-10 md:gap-5">
               <DataBox
-                className="text-amber-600 "
-                number={"+ 400"}
-                text="Estudiantes"
+                className="text-amber-600 pr-5 pl-5"
+                number={" + 400 "}
+                text="Estudiantes "
               ></DataBox>
               <DataBox
                 className="text-fuchsia-300"
@@ -167,16 +167,16 @@ const page = () => {
           </div>
         </div>
         <Card
-          className="max-w-5/6 m-0  pt-0  text-5xl mb-35"
+          className="w-5/6 m-0  pt-0  text-8xl mb-35"
           titlecard="¡Únete a Genuine Digital School hoy!"
           classNameChildrens="flex-col justify-center items-center pt-0 h-full text-5xl h-full"
         >
           <TitleCard
-            className="text-2xl p-4 "
+            className="text-4xl p-4  font-semibold"
             text="Explora el increíble universo de la educación virtual junto a tu hijo"
           ></TitleCard>
           <TitleCard
-            className="text-xl p-4"
+            className="text-2xl p-4"
             text="Síguenos en Redes Sociales y conoce nuestra gran comunidad digital"
           ></TitleCard>
           <div className="flex flex-row justify-center items-center justify-self-center gap-10 p-6 ">
