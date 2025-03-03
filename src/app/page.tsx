@@ -36,9 +36,9 @@ const page = () => {
       >
         <Card
           className="top-2/4 left-2/4 w-3/4 m-0 ml-4 md:w-1/3"
-          titlecard="Estas a punto de iniciar un viaje hacia el universo de la "
+          titlecard="Estás a punto de iniciar un viaje hacia el universo de la "
           titlecard2="educación digital"
-          classNameChildrens="flex justify-center items-center p-2"
+          classNameChildrens="flex justify-center items-center p-2 mt-3 "
         >
           <img src={logo.src} alt="Logo" className="w-7/12" />
         </Card>

@@ -22,7 +22,7 @@ const Card2 = ({
   return (
     <>
       <div
-        className={`flex flex-col justify-center items-start bg-white w-1/4 shadow-lg rounded-2xl h-auto p-6 gap-3 border-2  ${className}`}
+        className={`flex flex-col justify-center items-start bg-white w-1/4 shadow-lg rounded-2xl h-auto p-6 gap-3 border-2 mt-1 ${className}`}
       >
         <img
           src={imageUrl}
