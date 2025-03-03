@@ -38,7 +38,7 @@ const page = () => {
           className="top-2/4 left-2/4  m-0 ml-4 md:w-1/3"
           titlecard="Estás a punto de iniciar un viaje hacia el universo de la "
           titlecard2="educación digital"
-          classNameChildrens="flex justify-center items-center p-10 "
+          classNameChildrens="justify-center items-center p-10 "
         >
           <img src={logo.src} alt="Logo" className="w-7/12" />
         </Card>
@@ -56,21 +56,21 @@ const page = () => {
         />
         <TitleCard
           text="Nuestra misión en el mundo y lo que soñamos para tus hijos"
-          className="font-bold mt-4 flex-1 text-3xl ml-70 mr-70 text-center md:text-5xl t"
+          className="font-bold mt-4 flex-1 text-3xl ml-70 mr-70 text-center md:text-5xl md:ml-0mr-0"
         ></TitleCard>
         <div className="flex justify-center items-start flex-6 flex-wrap mt-5">
           <Card2
             className="top-2/4 left-2/4 w-4/5  m-0 ml-4 md:w-2/5"
             titlecard={cardTexts.card1.title}
-            classNameChildrens="flex justify-center items-center text-xl"
+            classNameChildrens="flex justify-center items-center text-xl pb-10"
             image={lc1}
           >
             {cardTexts.card1.text}
           </Card2>
           <Card2
-            className="top-2/4 left-2/4 w-4/5 m-0 ml-4 md:w-2/5"
+            className="top-2/4 left-2/4 w-4/5 m-0  mb-2 ml-4 md:w-2/5"
             titlecard={cardTexts.card2.title}
-            classNameChildrens="flex justify-center items-center text-xl"
+            classNameChildrens="flex justify-center items-center text-xl "
             image={lc2}
           >
             {cardTexts.card2.text}

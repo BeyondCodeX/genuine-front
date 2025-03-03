@@ -29,11 +29,11 @@ const Card2 = ({
           alt="Logo"
           className="w-[calc(80px)] h-auto max-w-[calc(120px)] min-w-[calc(80px)] mt-5"
         />
-        <div className="flex justify-start items-start h-2/4 bg-transparent ">
+        <div className="flex justify-start items-start h-auto bg-transparent ">
           <TitleCard text={titlecard} className="font-bold "></TitleCard>
         </div>
         <div
-          className={`flex justify-center items-center h-2/4 bg-transparent text-blue-900 font-outfit"  ${classNameChildrens}`}
+          className={`flex justify-center items-center h-auto bg-transparent text-blue-900 font-outfit"  ${classNameChildrens}`}
         >
           {children}
         </div>
