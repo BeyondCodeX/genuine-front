@@ -38,26 +38,26 @@ const page = () => {
           className="top-2/4 left-2/4 w-3/4 m-0 ml-4 md:w-1/3"
           titlecard="Estas a punto de iniciar un viaje hacia el universo de la "
           titlecard2="educación digital"
-          classNameChildrens="flex justify-center items-center"
+          classNameChildrens="flex justify-center items-center p-2"
         >
-          <img src={logo.src} alt="Logo" />
+          <img src={logo.src} alt="Logo" className="w-7/12" />
         </Card>
       </Section>
       // This is the new section (1 title +2 cards2)
       <Section
         id="sec2"
-        className="flex flex-col  items-center  bg-gradient-to-b from-sky-200 to-slate-50"
+        className="flex flex-col  items-center  bg-gradient-to-t from-slate-50 via-slate-50 to-blue-50 min-h-auto"
       >
         <img
           src={fs2.src}
           alt="jetpack"
-          className="w-[calc(550px)] min-w-[calc(300px)] max-w-[calc(600px)] self-center"
+          className="w-auto self-center flex-5 h-auto"
         />
         <TitleCard
           text="Nuestra misión en el mundo y lo que soñamos para tus hijos"
-          className="font-bold"
+          className="font-bold flex-2 text-3xl ml-70 mr-70 text-center md:text-5xl"
         ></TitleCard>
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center flex-6 flex-wrap ">
           <Card2
             className="top-2/4 left-2/4 w-3/4 m-0 ml-4 md:w-1/3"
             titlecard={cardTexts.card1.title}
@@ -79,26 +79,31 @@ const page = () => {
       // This is the new section (2 subsections)
       <Section
         id="sec3"
-        className="flex-col justify-start  items-center h-1/2 bg-white"
+        className="flex flex-row justify-start  items-center h-1/2 bg-white"
         height="fit"
       >
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center ">
           <TitleCard
             text="De Estados Unidos para el mundo"
-            className="font-bold"
+            className="font-bold flex-2 p-10"
           ></TitleCard>
           <TitleCard
             text="Nuestro colegio digital privado está constituido y registrado en Estados Unidos ante el Florida
           Department of Education con el código 8822."
-            className="text-xs"
+            className="text-xs flex-2 p-10"
           ></TitleCard>
-          <TitleCard
-            text="Conoce el nuestro aquí"
-            className="text-xs"
-          ></TitleCard>
+          <div className="flex flex-row justify-center items-center flex-2 p-10 gap-4">
+            <TitleCard
+              text="Conoce el nuestro aquí"
+              className="text-xs"
+            ></TitleCard>
+            <button className="bg-blue-950 text-white p-2 rounded-lg">
+              Registro legal{" "}
+            </button>
+          </div>
         </div>
         <div>
-          <img src={fs3.src} alt="imggrupal" className="h-1/2" />
+          <img src={fs3.src} alt="imggrupal" className="h-full" />
         </div>
       </Section>
       // This is the new section 2 subsection
@@ -151,25 +156,25 @@ const page = () => {
         className="flex justify-start items-center "
         textFooter="studyatgenuine.com"
       >
-        <div className="flex justify-end items-end">
+        <div className="flex justify-end items-end bg-white  ">
           <div>
             <img src={logo.src} alt="logo" className="h-7" />
           </div>
         </div>
         <Card
-          className="top-2/4 left-2/4 w-1/2 m-0 ml-4 md:w-1/3"
+          className="w-5/6 m-0  pt-0  text-5xl"
           titlecard="¡Únete a Genuine Digital School hoy!"
-          classNameChildrens="flex-col justify-center items-center"
+          classNameChildrens="flex-col justify-center items-center pt-0 h-full text-5xl h-full"
         >
           <TitleCard
-            className="text-xs"
+            className="text-2xl p-4 "
             text="Explora el increíble universo de la educación virtual junto a tu hijo"
           ></TitleCard>
           <TitleCard
-            className="text-xs"
+            className="text-xl p-4"
             text="Síguenos en Redes Sociales y conoce nuestra gran comunidad digital"
           ></TitleCard>
-          <div className="flex flex-row justify-center items-center justify-self-center">
+          <div className="flex flex-row justify-center items-center justify-self-center gap-10 p-6 ">
             <img src={fb.src} alt="logo" className="h-7" />
             <img src={ig.src} alt="logo" className="h-7" />
             <img src={tkt.src} alt="logo" className="h-7" />
