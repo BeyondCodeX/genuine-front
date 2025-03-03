@@ -24,10 +24,10 @@ const Section = ({
   return (
     <div
       id={id}
-      className={`p-2.5 flex justify-center w-full md:w-10/12 relative h-${heightClass} max-h-fit`}
+      className={`p-2.5 flex justify-center w-full md:w-10/12 relative h-${heightClass} max-h-fit  md:p-0`}
     >
       <div
-        className={`bg-no-repeat object-contain bg-center bg-cover w-full rounded-4xl overflow-hidden   ${className}`}
+        className={`bg-no-repeat object-contain bg-center bg-cover w-full rounded-4xl overflow-hidden px-0 py-20   ${className}`}
         style={bgImageUrl ? { backgroundImage: `url(${bgImageUrl})` } : {}}
       >
         {children}

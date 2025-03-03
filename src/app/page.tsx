@@ -46,6 +46,7 @@ const page = () => {
       // This is the new section (1 title +2 cards2)
       <Section
         id="sec2"
+        height="auto"
         className="flex flex-col  items-center  bg-gradient-to-t from-slate-50 via-slate-50 to-blue-50 min-h-full h-auto"
       >
         <img
@@ -97,7 +98,7 @@ const page = () => {
               text="Conoce el nuestro aquí"
               className="text-2xl"
             ></TitleCard>
-            <button className="bg-blue-950 text-white p-2 rounded-lg text-2xl p-5">
+            <button className="bg-blue-950 text-white  rounded-lg text-2xl p-5">
               Registro legal{" "}
             </button>
           </div>
