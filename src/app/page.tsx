@@ -9,6 +9,7 @@ import lc2 from "@/images/Frame172.svg";
 import fs2 from "@/images/Jet-pack 1.png";
 import fs3 from "@/images/Fotoparabilinguismo1.png";
 import bgsf from "@/images/IMG_68741.png";
+import mapa from "@/images/Mapa_2023 2.png";
 //logos rrss
 import fb from "@/images/FB.svg";
 import ig from "@/images/IG.svg";
@@ -28,6 +29,7 @@ const page = () => {
     <>
       <BurgerMenu></BurgerMenu>
       <Section
+        id="inicio"
         bgImage={bgs1}
         className="flex justify-start items-center "
         textFooter="studyatgenuine.com"
@@ -42,8 +44,15 @@ const page = () => {
         </Card>
       </Section>
       // This is the new section (1 title +2 cards2)
-      <Section className="flex flex-col  items-center  bg-gradient-to-b from-sky-200 to-slate-50">
-        <img src={fs2.src} alt="jetpack" className="w-[calc(550px)] min-w-[calc(300px)] max-w-[calc(600px)] self-center" />
+      <Section
+        id="sec2"
+        className="flex flex-col  items-center  bg-gradient-to-b from-sky-200 to-slate-50"
+      >
+        <img
+          src={fs2.src}
+          alt="jetpack"
+          className="w-[calc(550px)] min-w-[calc(300px)] max-w-[calc(600px)] self-center"
+        />
         <TitleCard
           text="Nuestra misión en el mundo y lo que soñamos para tus hijos"
           className="font-bold"
@@ -69,6 +78,7 @@ const page = () => {
       </Section>
       // This is the new section (2 subsections)
       <Section
+        id="sec3"
         className="flex-col justify-start  items-center h-1/2 bg-white"
         height="fit"
       >
@@ -93,7 +103,7 @@ const page = () => {
       </Section>
       // This is the new section 2 subsection
       <Section
-        className="flex-row justify-start  items-center h-1/2 bg-white"
+        className="flex-row justify-start  items-center h-1/2 bg-white md:flex-wrap"
         height="fit"
       >
         <div className="flex flex-row w-full">
@@ -112,29 +122,31 @@ const page = () => {
               texto="Colombia, Sudáfrica, Filipinas, Chile, México, Singapur."
             ></TextBox>
           </div>
-          <div className="flex flex-col justify-center items-center flex-3">
-            <div className="flex flex-row justify-around w-full">
+          <div className="flex flex-col justify-center items-center flex-3 mt-3 ">
+            <div className="flex flex-row justify-around w-full md:flex-wrap ">
               <DataBox
                 className="text-amber-600 "
-                number={"500"}
+                number={"+ 400"}
                 text="Estudiantes"
               ></DataBox>
               <DataBox
                 className="text-fuchsia-300"
-                number={"500"}
+                number={"28"}
                 text="Staff"
               ></DataBox>
               <DataBox
-                className="text-fuchsia-950"
-                number={"500"}
+                className="text-fuchsia-950 "
+                number={"44"}
                 text="Profesores"
               ></DataBox>
             </div>
+            <img src={mapa.src} alt="imggrupal" className="w-full" />
           </div>
         </div>
       </Section>
       // "footer"
       <Section
+        id="sec4"
         bgImage={bgsf}
         className="flex justify-start items-center "
         textFooter="studyatgenuine.com"

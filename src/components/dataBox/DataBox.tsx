@@ -11,7 +11,7 @@ const DataBox = ({ className, number, text }: DataBoxProps) => {
     >
       <div className="flex flex-row w-full justify-center items-center gap-3">
         <div className="text-3xl font-bold">{number}</div>
-        <div className="text-sm">{text}</div>
+        <div className=" font-bold text-2xl">{text}</div>
       </div>
     </div>
   );

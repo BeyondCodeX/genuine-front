@@ -7,6 +7,7 @@ interface SectionProps {
   className?: string;
   textFooter?: string;
   height?: string;
+  id?: string;
 }
 const Section = ({
   bgImage,
@@ -14,6 +15,7 @@ const Section = ({
   className,
   textFooter,
   height,
+  id,
 }: SectionProps) => {
   // Convert bgImage to string if it's StaticImageData
   const bgImageUrl = typeof bgImage === "string" ? bgImage : bgImage?.src;
@@ -21,16 +23,17 @@ const Section = ({
 
   return (
     <div
+      id={id}
       className={`p-2.5 flex justify-center w-full md:w-10/12 relative h-${heightClass} `}
     >
       <div
-        className={`bg-no-repeat object-contain bg-center bg-cover w-full rounded-4xl ${className}`}
+        className={`bg-no-repeat object-contain bg-center bg-cover w-full rounded-4xl overflow-hidden  ${className}`}
         style={bgImageUrl ? { backgroundImage: `url(${bgImageUrl})` } : {}}
       >
         {children}
       </div>
       {textFooter && (
-        <div className="absolute bottom-0 w-full text-center text-white bg-transparent  bg-opacity-50 p-2 mb-4">
+        <div className="absolute bottom-0 w-full text-center text-white bg-transparent  bg-opacity-50 p-2 mb-4 font-bold text-2xl">
           {textFooter}
         </div>
       )}
