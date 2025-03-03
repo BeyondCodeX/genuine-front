@@ -19,15 +19,15 @@ const Section = ({
 }: SectionProps) => {
   // Convert bgImage to string if it's StaticImageData
   const bgImageUrl = typeof bgImage === "string" ? bgImage : bgImage?.src;
-  const heightClass = height ? height : "dvh"; // Si height está presente, no usar h-dvh
+  const heightClass = height ? height : "auto"; // Si height está presente, no usar h-dvh
 
   return (
     <div
       id={id}
-      className={`p-2.5 flex justify-center w-full md:w-10/12 relative h-${heightClass} max-h-fit  md:p-0`}
+      className={`p-0.5 md:p-2.5 flex justify-center w-full md:w-10/12 relative h-${heightClass} max-h-fit m-2.5 `}
     >
       <div
-        className={`bg-no-repeat object-contain bg-center bg-cover w-full rounded-4xl overflow-hidden px-0 py-20   ${className}`}
+        className={`bg-no-repeat object-contain bg-center bg-cover w-full rounded-4xl overflow-hidden    ${className}`}
         style={bgImageUrl ? { backgroundImage: `url(${bgImageUrl})` } : {}}
       >
         {children}

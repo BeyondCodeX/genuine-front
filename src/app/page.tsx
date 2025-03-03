@@ -33,9 +33,10 @@ const page = () => {
         bgImage={bgs1}
         className="flex justify-start items-center "
         textFooter="studyatgenuine.com"
+        
       >
         <Card
-          className="top-2/4 left-2/4  m-0 ml-4 md:w-1/3"
+          className="top-2/4 left-2/4  m-0  mb-45 ml-4 md:w-1/3 md:mt-65  "
           titlecard="Estás a punto de iniciar un viaje hacia el universo de la "
           titlecard2="educación digital"
           classNameChildrens="justify-center items-center p-10 "
@@ -47,7 +48,7 @@ const page = () => {
       <Section
         id="sec2"
         height="auto"
-        className="flex flex-col  items-center  bg-gradient-to-t from-slate-50 via-slate-50 to-blue-50 min-h-full h-auto"
+        className="flex flex-col  items-center  bg-gradient-to-t from-slate-50 via-slate-50 to-blue-50 min-h-full h-auto px-0 py-20"
       >
         <img
           src={fs2.src}
@@ -56,7 +57,7 @@ const page = () => {
         />
         <TitleCard
           text="Nuestra misión en el mundo y lo que soñamos para tus hijos"
-          className="font-bold mt-4 flex-1 text-3xl ml-70 mr-70 text-center md:text-5xl md:ml-0mr-0"
+          className="font-bold mt-4 flex-1 text-3xl ml-5 mr-5 text-center md:text-5xl md:ml-70 md:mr-70"
         ></TitleCard>
         <div className="flex justify-center items-start flex-6 flex-wrap mt-5">
           <Card2
@@ -93,10 +94,10 @@ const page = () => {
           Department of Education con el código 8822."
             className="text-2xl flex-2 p-20 pt-0 pb-0"
           ></TitleCard>
-          <div className="flex flex-row justify-center items-center flex-2 p-10 pl-20 gap-5 flex-wrap md:flex-nowrap">
+          <div className="flex flex-row justify-center items-center flex-2 p-10 pl-20 gap-10 flex-wrap md:flex-nowrap">
             <TitleCard
               text="Conoce el nuestro aquí"
-              className="text-2xl"
+              className="text-2xl text-center md:text-nowrap"
             ></TitleCard>
             <button className="bg-blue-950 text-white  rounded-lg text-2xl p-5">
               Registro legal{" "}
@@ -109,12 +110,13 @@ const page = () => {
       </Section>
       // This is the new section 2 subsection
       <Section
+      id="secmap"
         className="flex-row justify-start  items-center h-1/2 bg-white md:flex-wrap"
-        height="fit"
+        
       >
-        <div className="flex flex-row w-full">
-          <div className="flex flex-col justify-center items-center flex-1">
-            <TitleCard text="Somos del mundo" className="font-bold"></TitleCard>
+        <div className="flex flex-row w-full flex-wrap md:flex-nowrap">
+          <div className="flex flex-col justify-start items-center flex-1">
+            <TitleCard text="Somos del mundo" className="font-bold text-6xl m-15 mb-10"></TitleCard>
             <TextBox
               className="bg-amber-600 text-white"
               texto="Colombia, Ecuador, Perú, México, Panamá, Costa Rica, Chile, Argentina, Estados Unidos, Emiratos Árabes, Brasil, República Dominicana, Irlanda, Canadá, España, Portugal, China, Italia."
@@ -128,8 +130,8 @@ const page = () => {
               texto="Colombia, Sudáfrica, Filipinas, Chile, México, Singapur."
             ></TextBox>
           </div>
-          <div className="flex flex-col justify-center items-center flex-3 mt-3 ">
-            <div className="flex flex-row justify-around w-full md:flex-wrap ">
+          <div className="flex flex-col justify-center items-center flex-3 mt-15 ">
+            <div className="flex flex-row justify-around w-full flex-wrap md:flex-nowrap gap-10 md:gap-0">
               <DataBox
                 className="text-amber-600 "
                 number={"+ 400"}
@@ -146,7 +148,7 @@ const page = () => {
                 text="Profesores"
               ></DataBox>
             </div>
-            <img src={mapa.src} alt="imggrupal" className="w-full" />
+            <img src={mapa.src} alt="imggrupal" className="w-full p-20 pt-0 pb-0" />
           </div>
         </div>
       </Section>
@@ -157,13 +159,13 @@ const page = () => {
         className="flex justify-start items-center flex-col"
         textFooter="studyatgenuine.com"
       >
-        <div className="flex justify-end items-end bg-white  w-auto h-auto m-10 p-10">
+        <div className="flex justify-end items-end bg-white  w-auto h-auto m-15 p-6 pl-12 pr-12 tp:10 self-end rounded-full">
           <div>
             <img src={logo.src} alt="logo" className="h-18" />
           </div>
         </div>
         <Card
-          className="max-w-5/6 m-0  pt-0  text-5xl"
+          className="max-w-5/6 m-0  pt-0  text-5xl mb-35"
           titlecard="¡Únete a Genuine Digital School hoy!"
           classNameChildrens="flex-col justify-center items-center pt-0 h-full text-5xl h-full"
         >

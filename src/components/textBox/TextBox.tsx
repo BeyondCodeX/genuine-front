@@ -6,7 +6,7 @@ interface TextBoxProps {
 const TextBox = ({ className, texto }: TextBoxProps) => {
   return (
     <div
-      className={`w-2xs " ${className}`}
+      className={`w-auto p-5  md:ml-15 md:mr15  " ${className}`}
     >
       {texto}
     </div>
