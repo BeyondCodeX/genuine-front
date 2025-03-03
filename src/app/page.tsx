@@ -33,7 +33,6 @@ const page = () => {
         bgImage={bgs1}
         className="flex justify-start items-center "
         textFooter="studyatgenuine.com"
-        
       >
         <Card
           className="top-2/4 left-2/4  m-0  mb-45 ml-4 md:w-1/3 md:mt-65  "
@@ -61,19 +60,19 @@ const page = () => {
         <div className="flex justify-center items-start flex-6 flex-wrap mt-5">
           <Card2
             className="top-2/4 left-2/4 w-4/5  m-0 ml-4 md:w-2/5"
-            titlecard={cardTexts.card1.title}
+            titlecard={cardTexts.card11.title}
             classNameChildrens="flex justify-center items-center text-xl pb-10"
             image={lc1}
           >
-            {cardTexts.card1.text}
+            {cardTexts.card11.text}
           </Card2>
           <Card2
             className="top-2/4 left-2/4 w-4/5 m-0  mb-2 ml-4 md:w-2/5"
-            titlecard={cardTexts.card2.title}
+            titlecard={cardTexts.card22.title}
             classNameChildrens="flex justify-center items-center text-xl "
             image={lc2}
           >
-            {cardTexts.card2.text}
+            {cardTexts.card22.text}
           </Card2>
         </div>
       </Section>
@@ -88,8 +87,7 @@ const page = () => {
             className="font-bold flex-2 p-20 pb-10 text-3xl"
           ></TitleCard>
           <TitleCard
-            text="Nuestro colegio digital privado está constituido y registrado en Estados Unidos ante el Florida
-          Department of Education con el código 8822."
+            text={cardTexts.sec3.text}
             className="text-2xl flex-2 p-20 pt-0 pb-0"
           ></TitleCard>
           <div className="flex flex-row justify-center items-center flex-2 p-10 pl-20 gap-10 flex-wrap md:flex-nowrap">
@@ -98,7 +96,9 @@ const page = () => {
               className="text-2xl text-center md:text-nowrap"
             ></TitleCard>
             <button className="bg-blue-950 text-white  rounded-lg text-2xl p-5">
-              Registro legal{" "}
+              <a href="https://studyatgenuine.com/registro-legal/" target="_blank">
+                Registro legal
+              </a>
             </button>
           </div>
         </div>
@@ -107,24 +107,26 @@ const page = () => {
         </div>
       </Section>
       <Section
-      id="secmap"
+        id="secmap"
         className="flex-row justify-start  items-center h-1/2 bg-white md:flex-wrap"
-        
       >
         <div className="flex flex-row w-full flex-wrap md:flex-nowrap">
           <div className="flex flex-col justify-start items-center flex-1">
-            <TitleCard text="Somos del mundo" className="font-bold text-6xl m-15 mb-10"></TitleCard>
+            <TitleCard
+              text="Somos del mundo"
+              className="font-bold text-6xl m-15 mb-10"
+            ></TitleCard>
             <TextBox
               className="bg-amber-600 text-white"
-              texto="Colombia, Ecuador, Perú, México, Panamá, Costa Rica, Chile, Argentina, Estados Unidos, Emiratos Árabes, Brasil, República Dominicana, Irlanda, Canadá, España, Portugal, China, Italia."
+              texto={cardTexts.boxes.box1}
             ></TextBox>
             <TextBox
               className="bg-fuchsia-400 text-blue-950"
-              texto="Estados Unidos, Colombia, Perú, Brasil, Chile, México, Venezuela.s"
+              texto={cardTexts.boxes.box2}
             ></TextBox>
             <TextBox
               className="bg-fuchsia-950 text-white"
-              texto="Colombia, Sudáfrica, Filipinas, Chile, México, Singapur."
+              texto={cardTexts.boxes.box3}
             ></TextBox>
           </div>
           <div className="flex flex-col justify-center items-center flex-3 mt-15 ">
@@ -145,7 +147,11 @@ const page = () => {
                 text="Profesores"
               ></DataBox>
             </div>
-            <img src={mapa.src} alt="imggrupal" className="w-full p-20 pt-0 pb-0" />
+            <img
+              src={mapa.src}
+              alt="imggrupal"
+              className="w-full p-20 pt-0 pb-0"
+            />
           </div>
         </div>
       </Section>
@@ -174,11 +180,21 @@ const page = () => {
             text="Síguenos en Redes Sociales y conoce nuestra gran comunidad digital"
           ></TitleCard>
           <div className="flex flex-row justify-center items-center justify-self-center gap-10 p-6 ">
-            <img src={fb.src} alt="logo" className="h-7" />
-            <img src={ig.src} alt="logo" className="h-7" />
-            <img src={tkt.src} alt="logo" className="h-7" />
-            <img src={yt.src} alt="logo" className="h-7" />
-            <img src={lkin.src} alt="logo" className="h-7" />
+          <a href="https://www.facebook.com/genuineds" target="_blank" rel="noopener noreferrer">
+              <img src={fb.src} alt="Facebook" className="h-7" />
+            </a>
+            <a href="https://www.instagram.com/genuineds/" target="_blank" rel="noopener noreferrer">
+              <img src={ig.src} alt="Instagram" className="h-7" />
+            </a>
+            <a href="https://www.tiktok.com/@genuineds" target="_blank" rel="noopener noreferrer">
+              <img src={tkt.src} alt="TikTok" className="h-7" />
+            </a>
+            <a href="https://www.youtube.com/channel/UCy9QgoI87ITVm12d_C0NnZw" target="_blank" rel="noopener noreferrer">
+              <img src={yt.src} alt="YouTube" className="h-7" />
+            </a>
+            <a href="https://www.linkedin.com/company/genuine-digital-school/" target="_blank" rel="noopener noreferrer">
+              <img src={lkin.src} alt="LinkedIn" className="h-7" />
+            </a>
           </div>
         </Card>
       </Section>
