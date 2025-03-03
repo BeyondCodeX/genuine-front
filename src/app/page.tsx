@@ -87,8 +87,11 @@ const page = () => {
             className="font-bold flex-2 p-20 pb-10 text-5xl"
           ></TitleCard>
           <TitleCard
-            text={cardTexts.sec3.text}
-            className="text-2xl flex-2 p-20 pt-0 pb-0"
+              text={
+                <>
+                  Nuestro colegio digital privado está constituido y registrado en Estados Unidos ante el <strong>Florida Department of Education con el código 8822</strong>.
+                </>
+              } className="text-2xl flex-2 p-20 pt-0 pb-0"
           ></TitleCard>
           <div className="flex flex-row justify-center items-center flex-2 p-10 pl-20 gap-10 flex-wrap md:flex-nowrap">
             <TitleCard

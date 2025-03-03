@@ -5,7 +5,7 @@ const outfit = Outfit({ subsets: ["latin-ext"] });
 
 interface TitleCardProps {
   className?: string;
-  text: string;
+  text: string | React.ReactNode;
   text2?: string;
 }
 
