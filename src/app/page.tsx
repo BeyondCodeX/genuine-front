@@ -35,10 +35,10 @@ const page = () => {
         textFooter="studyatgenuine.com"
       >
         <Card
-          className="top-2/4 left-2/4 w-3/4 m-0 ml-4 md:w-1/3"
+          className="top-2/4 left-2/4  m-0 ml-4 md:w-1/3"
           titlecard="Estás a punto de iniciar un viaje hacia el universo de la "
           titlecard2="educación digital"
-          classNameChildrens="flex justify-center items-center p-2 mt-3 "
+          classNameChildrens="flex justify-center items-center p-10 "
         >
           <img src={logo.src} alt="Logo" className="w-7/12" />
         </Card>
@@ -46,30 +46,30 @@ const page = () => {
       // This is the new section (1 title +2 cards2)
       <Section
         id="sec2"
-        className="flex flex-col  items-center  bg-gradient-to-t from-slate-50 via-slate-50 to-blue-50 min-h-auto"
+        className="flex flex-col  items-center  bg-gradient-to-t from-slate-50 via-slate-50 to-blue-50 min-h-full h-auto"
       >
         <img
           src={fs2.src}
           alt="jetpack"
-          className="w-auto self-center flex-5 h-auto"
+          className=" self-center flex-4 h-auto"
         />
         <TitleCard
           text="Nuestra misión en el mundo y lo que soñamos para tus hijos"
-          className="font-bold flex-2 text-3xl ml-70 mr-70 text-center md:text-5xl"
+          className="font-bold mt-4 flex-1 text-3xl ml-70 mr-70 text-center md:text-5xl t"
         ></TitleCard>
-        <div className="flex justify-center items-center flex-6 flex-wrap ">
+        <div className="flex justify-center items-start flex-6 flex-wrap mt-5">
           <Card2
-            className="top-2/4 left-2/4 w-3/4 m-0 ml-4 md:w-1/3"
+            className="top-2/4 left-2/4 w-4/5  m-0 ml-4 md:w-2/5"
             titlecard={cardTexts.card1.title}
-            classNameChildrens="flex justify-center items-center text-xs"
+            classNameChildrens="flex justify-center items-center text-xl"
             image={lc1}
           >
             {cardTexts.card1.text}
           </Card2>
           <Card2
-            className="top-2/4 left-2/4 w-3/4 m-0 ml-4 md:w-1/3"
+            className="top-2/4 left-2/4 w-4/5 m-0 ml-4 md:w-2/5"
             titlecard={cardTexts.card2.title}
-            classNameChildrens="flex justify-center items-center text-xs"
+            classNameChildrens="flex justify-center items-center text-xl"
             image={lc2}
           >
             {cardTexts.card2.text}
@@ -79,30 +79,30 @@ const page = () => {
       // This is the new section (2 subsections)
       <Section
         id="sec3"
-        className="flex flex-row justify-start  items-center h-1/2 bg-white"
+        className="flex flex-row flex-wrap md:flex-nowrap justify-start  items-center h-1/2 bg-white"
         height="fit"
       >
-        <div className="flex flex-col justify-center items-center ">
+        <div className="flex flex-col justify-center items-start flex:1  ">
           <TitleCard
             text="De Estados Unidos para el mundo"
-            className="font-bold flex-2 p-10"
+            className="font-bold flex-2 p-20 pb-10 text-3xl"
           ></TitleCard>
           <TitleCard
             text="Nuestro colegio digital privado está constituido y registrado en Estados Unidos ante el Florida
           Department of Education con el código 8822."
-            className="text-xs flex-2 p-10"
+            className="text-2xl flex-2 p-20 pt-0 pb-0"
           ></TitleCard>
-          <div className="flex flex-row justify-center items-center flex-2 p-10 gap-4">
+          <div className="flex flex-row justify-center items-center flex-2 p-10 pl-20 gap-5 flex-wrap md:flex-nowrap">
             <TitleCard
               text="Conoce el nuestro aquí"
-              className="text-xs"
+              className="text-2xl"
             ></TitleCard>
-            <button className="bg-blue-950 text-white p-2 rounded-lg">
+            <button className="bg-blue-950 text-white p-2 rounded-lg text-2xl p-5">
               Registro legal{" "}
             </button>
           </div>
         </div>
-        <div>
+        <div className="flex flex-col justify-center items-center flex:1 h-full w-full">
           <img src={fs3.src} alt="imggrupal" className="h-full" />
         </div>
       </Section>
@@ -153,16 +153,16 @@ const page = () => {
       <Section
         id="sec4"
         bgImage={bgsf}
-        className="flex justify-start items-center "
+        className="flex justify-start items-center flex-col"
         textFooter="studyatgenuine.com"
       >
-        <div className="flex justify-end items-end bg-white  ">
+        <div className="flex justify-end items-end bg-white  w-auto h-auto m-10 p-10">
           <div>
-            <img src={logo.src} alt="logo" className="h-7" />
+            <img src={logo.src} alt="logo" className="h-18" />
           </div>
         </div>
         <Card
-          className="w-5/6 m-0  pt-0  text-5xl"
+          className="max-w-5/6 m-0  pt-0  text-5xl"
           titlecard="¡Únete a Genuine Digital School hoy!"
           classNameChildrens="flex-col justify-center items-center pt-0 h-full text-5xl h-full"
         >

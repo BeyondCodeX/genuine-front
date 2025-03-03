@@ -19,8 +19,8 @@ const BurgerMenu = () => {
       </button>
       {isOpen && (
         
-        <div id="white box" className="fixed top-0 right-0 mt-0 bg-white shadow-lg rounded-lg p-4 z-40 w-2xs pt-20 ">
-          <button onClick={handleClick} className="fixed top-1 right-60 p-4 z-50">
+        <div id="white box" className="fixed top-0 right-0 mt-2 mr-2 bg-white shadow-lg rounded-lg p-4 z-40 w-[300px] pt-20 ">
+          <button onClick={handleClick} className="fixed top-4 right-65 p-4 z-50">
         <img src={closeImage.src} alt="Menu"  className=" w-auto md:w-full  " />
       </button>
           <nav className="flex flex-col items-center">

@@ -22,18 +22,18 @@ const Card2 = ({
   return (
     <>
       <div
-        className={`flex flex-col justify-center items-start bg-white w-1/4 shadow-lg rounded-2xl h-auto p-6 gap-3 border-2 mt-1 ${className}`}
+        className={`flex flex-col justify-start items-start bg-transparent w-4/10 min-w-[300px] pt-0 shadow-lg rounded-2xl h-auto min-h-1/2 p-6 gap-4 border-3 mt-5 border-b-blue-950  ${className}`}
       >
         <img
           src={imageUrl}
           alt="Logo"
-          className="w-[calc(80px)] h-auto max-w-[calc(120px)] min-w-[calc(80px)]"
+          className="w-[calc(80px)] h-auto max-w-[calc(120px)] min-w-[calc(80px)] mt-5"
         />
         <div className="flex justify-start items-start h-2/4 bg-transparent ">
           <TitleCard text={titlecard} className="font-bold "></TitleCard>
         </div>
         <div
-          className={`flex justify-center items-center h-2/4 bg-white text-blue-900 font-outfit"  ${classNameChildrens}`}
+          className={`flex justify-center items-center h-2/4 bg-transparent text-blue-900 font-outfit"  ${classNameChildrens}`}
         >
           {children}
         </div>

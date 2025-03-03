@@ -27,13 +27,13 @@ const Section = ({
       className={`p-2.5 flex justify-center w-full md:w-10/12 relative h-${heightClass} max-h-fit`}
     >
       <div
-        className={`bg-no-repeat object-contain bg-center bg-cover w-full rounded-4xl overflow-hidden  md:w-full ${className}`}
+        className={`bg-no-repeat object-contain bg-center bg-cover w-full rounded-4xl overflow-hidden   ${className}`}
         style={bgImageUrl ? { backgroundImage: `url(${bgImageUrl})` } : {}}
       >
         {children}
       </div>
       {textFooter && (
-        <div className="absolute bottom-0 w-full text-center text-white bg-transparent  bg-opacity-50 p-2 mb-4 font-bold text-2xl">
+        <div className="absolute bottom-0 w-full text-center text-white bg-transparent  bg-opacity-50 p-2 mb-4 font-semibold text-[32px]">
           {textFooter}
         </div>
       )}

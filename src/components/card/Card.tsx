@@ -21,9 +21,9 @@ const Card = ({
     <>
       <div
         id="card"
-        className={`flex flex-col justify-center bg-white shadow-lg rounded-2xl min-h-96 overflow-hidden w-full  ${className}`}
+        className={`flex flex-col justify-center bg-white shadow-lg rounded-2xl min-h-96 overflow-hidden   ${className}`}
       >
-        <div className="flex justify-center flex-1  items-center bg-gradient-to-t from-violet-400 via-violet-300 to-violet-50  p-20 overflow-hidden">
+        <div className="flex justify-center flex-1  items-center bg-gradient-to-t from-violet-400 via-violet-300 to-violet-50  p-10 overflow-hidden">
           <TitleCard
             text={titlecard}
             text2={titlecard2}
