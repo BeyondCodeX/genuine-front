@@ -24,7 +24,7 @@ const Section = ({
   return (
     <div
       id={id}
-      className={`p-0.5 md:p-2.5 flex justify-center w-full md:w-10/12 relative h-${heightClass} max-h-fit m-2.5 `}
+      className={`p-0.5 pr-2 md:p-2.5 flex justify-center w-full md:w-10/12 relative h-${heightClass} max-h-fit m-2.5 `}
     >
       <div
         className={`bg-no-repeat object-contain bg-center bg-cover w-full rounded-4xl overflow-hidden    ${className}`}
